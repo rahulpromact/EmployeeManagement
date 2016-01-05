@@ -27,11 +27,11 @@ namespace ConsoleApplication11
             noOfEntries = Convert.ToInt32(Console.ReadLine());
            
             List<Hr> a1 = new List<Hr>();
-            List<developer> a2 = new List<developer>();
+            List<Developer> a2 = new List<Developer>();
             for (int i = 0; i < noOfEntries; i++)
             {
                 Hr p = new Hr();
-                developer e = new developer();
+                Developer e = new Developer();
                 
                 Console.WriteLine("who are you");
                 Console.WriteLine("if HR enter 1");
@@ -226,7 +226,7 @@ namespace ConsoleApplication11
                             Console.WriteLine(b.area);
                             Console.WriteLine(b.pincode);
                             Console.WriteLine(b.email);
-                            Console.WriteLine(b.contactnumber);
+                            Console.WriteLine(b.contactNumber);
                             Console.WriteLine(b.linkURL);
 
 
@@ -235,7 +235,7 @@ namespace ConsoleApplication11
                             int c = Convert.ToInt32(Console.ReadLine());
                             if (c == 1)
                             {
-                                Console.WriteLine("message has been sent to  " + b.contactnumber);
+                                Console.WriteLine("message has been sent to  " + b.contactNumber);
                             }
                         } Console.WriteLine();
                         Console.ReadKey();
@@ -247,7 +247,7 @@ namespace ConsoleApplication11
                     string w;
                     Console.WriteLine("enter the id no of the employee you want to search");
                     w = Console.ReadLine();
-                    foreach (developer c in a2)
+                    foreach (Developer c in a2)
                     {
 
                         if (c.id == w)

@@ -8,7 +8,7 @@ namespace ConsoleApplication11
 {
     public class Hr : Employee
    {
-      public string  id,name,street1,street2,city,area,pincode,email,contactnumber,linkURL;
+      public string  id,name,street1,street2,city,area,pincode,email,contactNumber,linkURL;
     
        public override void register()
       {
@@ -37,7 +37,7 @@ namespace ConsoleApplication11
            email = Console.ReadLine();
        
            Console.WriteLine("enter your contactno");
-           contactnumber = Console.ReadLine();
+           contactNumber = Console.ReadLine();
         
             Console.WriteLine("enter your linkedinURL");
            linkURL = Console.ReadLine();
@@ -54,7 +54,7 @@ namespace ConsoleApplication11
             Console.WriteLine("city="+city);
             Console.WriteLine("pincode="+pincode);
             Console.WriteLine("email="+email);
-            Console.WriteLine("contact no="+contactnumber);
+            Console.WriteLine("contact no="+contactNumber);
             Console.WriteLine("linked in URL="+linkURL);
         }
        public void update(int n,string v)
@@ -67,7 +67,7 @@ namespace ConsoleApplication11
                  if (n == 6) { city = v; }
                  if (n == 7) { pincode = v; }
                  if (n == 8) { email = v; }
-                 if (n == 9) { contactnumber = v; }
+                 if (n == 9) { contactNumber = v; }
                  if (n == 10) {linkURL= v; }
 
 

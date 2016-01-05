@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication11
 {
-    public class developer : Employee
+    public class Developer : Employee
     {
         public string id, name, street1, street2, city, area, pincode, skype, slack, face, twitter;
 
